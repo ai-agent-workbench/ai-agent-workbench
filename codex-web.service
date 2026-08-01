@@ -1,0 +1,21 @@
+# 部署前请把所有 /home/user 路径、User 与 WORKBENCH_ACCOUNT 改成你的实际值，
+# 或改用 EnvironmentFile 注入（见 README「systemd 部署」一节）。
+[Unit]
+Description=Codex Web Workstation
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user/codex-web-app
+Environment=CODEX_WEB_STATE_DIR=/home/user/.local/share/codex-web
+Environment=WORKBENCH_ACCOUNT=your-login-name
+ExecStart=/home/user/codex-web-app/.venv/bin/uvicorn app:app --host 127.0.0.1 --port 18080 --proxy-headers
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3 @@
+.nav{position:fixed;z-index:20;left:0;right:0;bottom:0;width:auto;max-width:760px;height:calc(var(--nav-height) + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;margin:0 auto;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:var(--surface-deep);border-top:1px solid var(--line)}
+.nav a{padding:5px 3px;text-align:center;background:transparent;color:var(--muted);font-size:.72rem;line-height:1.15;text-decoration:none}
+.nav a span{display:block;font-size:1rem;line-height:1;margin-bottom:2px}

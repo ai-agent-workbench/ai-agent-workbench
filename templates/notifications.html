@@ -1,0 +1,13 @@
+<h1>通知规则</h1>
+<p>ntfy 仅推送安全风险事件（白名单模式）：</p>
+<ul>
+<li>登录失败</li>
+<li>身份验证器启用</li>
+<li>全权限对话启动</li>
+<li>Windows 任务 PIN 错误</li>
+<li>桥接审批 PIN 错误</li>
+<li>Windows 待审批操作</li>
+<li>文件删除</li>
+</ul>
+<p>任务开始/结束/取消/超时等其余事件仅记录审计日志，不推送。</p>
+<p>想恢复某类通知时，修改 <code>SECURITY_ALERTS</code> 字典即可。</p>

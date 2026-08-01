@@ -1,0 +1,17 @@
+# 部署前请把所有 /home/user 路径与 User 改成你的实际值。
+[Unit]
+Description=Codex Web Basic Auth Security Monitor
+After=network-online.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user/codex-web-app
+ExecStart=/home/user/codex-web-app/.venv/bin/python /home/user/codex-web-app/security_monitor.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

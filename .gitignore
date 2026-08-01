@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 运行时状态目录（TOTP 密钥、会话密钥、PIN、审计日志、任务数据、发布快照）
+# 默认在 ~/.local/share/codex-web，此处防御误放在仓内的情况
+state/
+releases/
+tasks/
+uploads/
+edits/
+*.jsonl
+totp_secret
+totp_enabled
+session_secret
+windows_high_risk_pin
+ntfy-topic.txt
+
+# 本地配置与密钥
+.codex-project.json
+.kimi-code/
+.agents/
+*.pem
+*.key
+windows_*_ed25519*
+
+# 编辑器与系统
+.DS_Store
+*.swp
+*~
+*.bak-*

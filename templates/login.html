@@ -1,0 +1,6 @@
+<h1>输入身份验证器验证码</h1>
+<form action='login' method='post'>
+<input name='code' inputmode='numeric' autocomplete='one-time-code' pattern='[0-9]{6}' maxlength='6' placeholder='6 位验证码' required>
+<button>登录</button>
+</form>
+{% if qr_svg %}<div class='qr'>{{ qr_svg | safe }}</div>{% endif %}

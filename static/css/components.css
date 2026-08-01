@@ -1,0 +1,31 @@
+input,textarea,select{width:100%;padding:13px;margin:8px 0 16px;border-radius:8px;border:1px solid #59616a;background:#272b30;color:var(--text);font:16px system-ui,sans-serif;caret-color:#b9eeee}
+input::placeholder,textarea::placeholder{color:#aeb4ba;opacity:1}
+input:focus,textarea:focus,select:focus{outline:2px solid #78bbbc;outline-offset:1px;border-color:#78bbbc}
+textarea{min-height:150px;resize:vertical}
+button,.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;border:0;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:1rem;text-decoration:none;touch-action:manipulation;cursor:pointer}
+.secondary{background:#3b424a;color:var(--text)}
+.danger{background:#ef4444;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:16px 0}
+.card{display:block;padding:15px;border:1px solid var(--line);border-radius:11px;background:var(--surface-raised);color:var(--text);text-decoration:none}
+.card b{display:block;font-size:1rem}
+.card small{display:block;margin-top:4px}
+details{margin:14px 0}
+summary{cursor:pointer;color:#bae6fd}
+.status{display:inline-block;padding:2px 8px;border-radius:999px;background:#3d4650;font-size:.85rem}
+.status.running,.status.queued,.status.windows_executing{background:#3e5366;color:#d7ebf4}
+.status.waiting_approval{background:#365863;color:#d6f1f1}
+.status.succeeded{background:#14532d;color:#bbf7d0}
+.status.failed,.status.timed_out,.status.windows_execution_uncertain{background:#7f1d1d;color:#fecaca}
+.status.cancelled{background:#374151;color:#e5e7eb}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+.toolbar .button{flex:1}
+.path,.picker-current{padding:10px;background:var(--surface-deep);border-radius:8px;overflow-wrap:anywhere}
+.notice{padding:12px 14px;margin:12px 0;border:1px solid #22c55e;border-radius:10px;background:#14532d;color:#dcfce7}
+.property-grid{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 12px}
+.property-grid dt{color:#94a3b8}
+.property-grid dd{margin:0;overflow-wrap:anywhere}
+dialog{width:min(520px,calc(100% - 24px));border:1px solid #52657f;border-radius:16px;background:var(--surface);color:#edf2f7;padding:18px}
+dialog::backdrop{background:rgba(2,6,23,.75)}
+.dialog-actions{display:flex;gap:10px}
+.dialog-actions button{flex:1}
+@media(max-width:640px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:82px;padding:12px}.card small{font-size:.78rem}.toolbar .button{min-width:calc(50% - 5px)}}

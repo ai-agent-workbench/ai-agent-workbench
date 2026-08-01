@@ -1,0 +1,10 @@
+# 部署前请把 /home/user 路径与 User 改成你的实际值。
+[Unit]
+Description=Codex Web health probe (ntfy alert after consecutive failures)
+
+[Service]
+Type=oneshot
+User=user
+ExecStart=/home/user/codex-web-app/scripts/healthcheck.sh
+NoNewPrivileges=true
+PrivateTmp=true
