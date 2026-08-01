@@ -8,6 +8,14 @@
 Codex CLI / Kimi CLI 编程 Agent**——发起任务、追问、审批高风险操作、浏览和编辑文件、
 管理项目，全部在被窝里完成。
 
+> **English**: A self-hosted web console (FastAPI + PWA) for remote-controlling AI coding
+> agents (Codex CLI / Kimi CLI) from your phone. Features a PIN-gated approval workflow for
+> high-risk operations, bubblewrap sandboxing, layered nginx gateway security (Basic Auth,
+> GeoIP, TOTP), full audit logging, and a two-stage release pipeline with smoke-test rollback.
+> Notably, every line of code was written by AI — the author makes decisions, AI implements.
+> Shared as a reference implementation; see `docs/` for the architecture and the
+> human-AI collaboration charter.
+
 ## 它是怎么来的
 
 这个项目本身也是一个方法论实验：**作者完全不懂编译、不写代码，只负责出决策和验收；
