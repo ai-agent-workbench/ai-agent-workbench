@@ -24,6 +24,11 @@ Codex CLI / Kimi CLI 编程 Agent**——发起任务、追问、审批高风险
 收录了支撑这种开发方式的 AI 协作章程（确认流程、发布纪律、工作记录格式），
 这是本项目自认为最稀缺的内容——代码可以重写，方法论不行。
 
+**背后的故事（中文长文）**：从 6·30 装机杀毒夜到 7·31 写爆 D 盘停机七小时的完整复盘——
+掘金[《AI 给自己写了本"员工手册"，我负责签字，它负责写代码和上线》](https://juejin.cn/post/7669635386159415336)｜
+知乎[《一行代码都不会的我，给 AI 当了一回"架构师"：它写代码，我立规矩》](https://zhuanlan.zhihu.com/p/2067768204131358015)。
+*The full story behind this project (in Chinese): [Juejin](https://juejin.cn/post/7669635386159415336) ｜ [Zhihu](https://zhuanlan.zhihu.com/p/2067768204131358015).*
+
 ## 功能一览
 
 - **双 Agent 后端**：Codex CLI（经模型代理）与 Kimi CLI（直连），任务级切换
