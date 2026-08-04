@@ -1,5 +1,7 @@
 # Codex Web 工作台（AI Agent Workbench）
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 > **免责声明**：本项目按作者个人环境（WSL + Windows 单机）深度定制，开源仅供参考与思路借鉴。
 > 作者**不承诺维护、适配或答疑支持**；部署到自己的环境需要你自行理解每一处配置与安全边界。
 > 把一套能远程指挥 AI 写代码的系统暴露到公网是有真实风险的，请在完全理解安全模型后再动手。
@@ -137,4 +139,8 @@ TOTP 密钥、会话签名密钥、Windows PIN 全部在运行时生成于状态
 
 ## License
 
-MIT，见 [LICENSE](LICENSE)。
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+本项目采用 MIT 开源协议。这意味着你可以自由地使用、修改、复制以及将本项目集成到你的
+商业产品中，无需支付任何费用或公开你的源代码——唯一义务是在再分发时保留原始的
+版权声明与许可声明。完整条文见 [LICENSE](LICENSE)。
