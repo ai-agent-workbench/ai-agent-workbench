@@ -1,5 +1,9 @@
 # Codex Web 工作台（AI Agent Workbench）
 
+> **新一代项目已独立发布：[Codex Mobile Workbench](https://github.com/ai-agent-workbench/codex-mobile-workbench)。**
+> 电脑负责执行，手机负责指挥。新的原生 Codex App Server 工作台现提供 [Windows／WSL 技术预览与完整下载](https://github.com/ai-agent-workbench/codex-mobile-workbench/releases/tag/v0.1.0-preview.1)。
+> 本仓库保留早期 CLI／Kimi 版本的代码、文档和历史；新项目请独立安装，不覆盖旧实例或导入旧认证数据。
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > **免责声明**：本项目按作者个人环境（WSL + Windows 单机）深度定制，开源仅供参考与思路借鉴。
